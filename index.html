@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/css/index.css">
+</head>
+<body>
+   <h1> Estilos II - SASS</h1> 
+   <nav>
+       <ul>
+            <li>
+                <a href="#definicion">Definicion </a>
+            </li>
+            <li>
+                <a href="#comandos">Comandos </a>
+            </li>
+            <li>
+                <a href="#mensajes">Mensajes </a>
+            </li>
+       </ul>
+   </nav>
+   <main>
+       <section id="definicion">
+           <h2>
+               Definicion
+           </h2>
+           <a href="https://sass-lang.com/">Documentacion Sass</a>
+           <a href="https://nodejs.com/">Docs Node</a>
+           <p class="definition">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ullam consequatur est quidem dignissimos debitis at atque. Quia maiores quae tenetur animi. Dignissimos cum modi, facere quis ipsum blanditiis illum.</p>
+           <p class="definition">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ullam consequatur est quidem dignissimos debitis at atque. Quia maiores quae tenetur animi. Dignissimos cum modi, facere quis ipsum blanditiis illum.</p>
+        </section>
+       <section id="comandos">
+        <h2>
+            Comandos
+        </h2>
+        <ol>
+            <li>
+                <h3>Iniciar un proyecto de node:</h3>
+                <code>npm init --yes</code>
+            </li>
+            <li>
+                <h3>Instalar sass de forma global</h3>
+                <code>npm install -g sass</code>
+            </li>
+            <li>
+                <h3>Agrego los scripts para compliar sass en mi package.json</h3>
+                <p>"scripts": {
+                    "sass-watch-dev": "sass --watch -c --style=expanded --no-source-map styles/sass:styles/css",
+                    "sass-compile-dev": "sass -c --style=expanded --no-source-map styles/sass:styles/css",
+                    "sass-compile-prod": "sass -c --style=compressed styles/sass:styles/css"
+                  }
+                </p>
+            </li>
+    
+        </ol>
+    </section>
+    <section id="mensajes">
+        <h2> Envianos tu consulta</h2>
+        <form id="consulta">
+            <div>
+                <input type="text" placeholder="Ingresa tu nombre">
+            </div>
+            <div>
+                <textarea placeholder="Deja tu consulta">
+    
+                </textarea>
+            </div>
+            <div>
+                <button>
+                    Enviar
+                </button>
+            </div>
+        </form>
+    </section>
+   </main>
+</body>
+</html>

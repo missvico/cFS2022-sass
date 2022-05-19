@@ -1,0 +1,104 @@
+nav {
+  background-color: #CF649A;
+  color: white;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  padding: 10px;
+}
+nav li:hover {
+  background-color: #998099;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+h1 {
+  color: #CF649A;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h2 {
+  color: #998099;
+  margin: 1rem 0rem 1.5rem 2rem;
+  border-color: #998099;
+  border-width: 2px;
+  border-style: double;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+main a {
+  text-decoration: none;
+  color: #c830c8;
+}
+main a:hover {
+  font-weight: bold;
+}
+main a:visited {
+  color: #998099;
+}
+
+.definition {
+  border: 10px #998099 solid;
+  padding: 12px;
+  margin: 10px auto;
+  width: 60vw;
+}
+
+ol li {
+  border-bottom: 3px dashed #CF649A;
+  padding: 10px;
+}
+
+form#consulta {
+  margin-left: 20px;
+  background-color: #998099;
+  width: 70%;
+}
+form#consulta input {
+  width: 30%;
+  height: 40px;
+  margin: 10px;
+}
+form#consulta textarea {
+  width: 30vw;
+  height: 5vh;
+  margin: 10px;
+}
+form#consulta button {
+  width: 20%;
+  margin: 10px;
+}
+
+@media (max-width: 412px) {
+  html {
+    font-size: 10px;
+    background-color: yellow;
+  }
+
+  p {
+    background-color: aqua;
+  }
+}
+@media (min-width: 412px) and (max-width: 820px) {
+  html {
+    font-size: 12px;
+    background-color: #df8e2b;
+  }
+}

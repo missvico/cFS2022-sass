@@ -1,0 +1,88 @@
+// variables
+@import 'variables/colors';
+@import 'variables/fonts';
+
+// Secciones
+@import 'sections/navbar';
+
+
+html{
+    font-size: 15px;
+}
+
+body {
+    font-family:  $primary-font;
+}
+
+h1 {
+    color: $primary-color;
+    font-family: $secondary-font;
+}
+
+h2{
+    color: $secondary-color;
+    margin: 1rem 0rem 1.5rem 2rem;
+    border-color: $secondary-color;
+    border-width: 2px;
+    border-style: double;
+    border-radius: 1rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+main {
+    a {
+        text-decoration: none;
+        color: $tertiary-color;
+        &:hover{
+            font-weight: bold;
+        }
+        &:visited{
+            color:$secondary-color;
+        }
+    }
+}
+
+.definition {
+    border: 10px $secondary-color solid;
+    padding: 12px;
+    margin: 10px auto; //puedo centrar el elemento de forma horizontal con auto
+    width: 60vw
+}
+
+ol {
+    li {
+        border-bottom: 3px dashed $primary-color;
+        padding: 10px
+    }
+}
+
+form#consulta {
+    margin-left: 20px;
+    background-color: $secondary-color;
+    width: 70%;
+    input {
+        width: 30%;
+        height: 40px;
+        margin: 10px
+    }
+    textarea {
+        width: 30vw;
+        height: 5vh;
+        margin: 10px
+    }
+    button {
+        width: 20%;
+        margin: 10px;
+    }
+}
+
+
+//mediaQuery
+@import 'mediaqueries/mobile';
+@import 'mediaqueries/tablet';
+
+
+
